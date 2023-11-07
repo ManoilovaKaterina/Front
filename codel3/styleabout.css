@@ -1,0 +1,36 @@
+main{
+    margin: 90px 20px 20px 20px;
+}
+.booksabout{
+align-items: stretch;
+justify-content: space-between;
+display: flex;
+  }
+#covers{
+    width: 90%;
+}
+#names{
+    width: 60%;
+}
+article img{
+    display: inline-block;
+}
+tr[class|="not"]{
+    color:#a89474;
+}
+aside h4 ~ a:link {
+    text-decoration: underline;
+    display: block;
+  }
+
+aside h4 ~ a:hover {
+    color: rgb(0, 179, 255);
+  }
+aside h4 ~ a:visited {
+    color: #a89474;
+  }
+
+p::selection {
+    color: white;
+    background-color: #704C81;
+  }

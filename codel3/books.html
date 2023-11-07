@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BookSpace</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Quicksand&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h2 id="sitename"><img src="logo.png" alt="Logo" id="logo"><a href="main.html">BookSpace</a></h2>
+        <nav>
+            <ul>
+              <li><a href="books.html">Книги</a></li>
+              <li><a href="authors.html">Автори</a></li>
+              <li><a href="genres.html">Жанри</a></li>
+              <li><a href="front.html">Про нас</a></li>
+            </ul>
+          </nav>
+          <form class="search" action="">
+            <input type="text" id="Search" placeholder="Пошук" name="search">
+            <button type="submit"><img src="search.svg" alt="search" height="10px"></button>
+          </form>
+    </header>
+    
+    <main>
+        <div class="filters">
+            <form action="">
+                <select id="sel_id" name="sel_sort" >
+                    <option value="rating">Рейтинг</option>
+                    <option value="popularity">Популярність</option>              
+                </select>
+                <button onclick="" style="width: 27px; height: 27px;"><img src="sort.png" alt="search" height="20px"></button>
+              </form>
+            
+            <form action="">
+                <h3>Жанри</h3>
+                <input type="checkbox" name="ed1" value="Фентезі">
+                <label for="ed1">Фентезі</label><br>
+                <input type="checkbox" name="ed2" value="Роман">
+                <label for="ed2">Роман</label><br>
+                <input type="checkbox" name="ed3" value="Детектив">
+                <label for="ed3">Детектив</label><br>
+                <input type="checkbox" name="ed4" value="Містика">
+                <label for="ed4">Містика</label><br>
+                <input type="checkbox" name="ed5" value="Пригоди">
+                <label for="ed5">Пригоди</label><br>
+                <input type="checkbox" name="ed6" value="Філософія">
+                <label for="ed6">Філософія</label><br>
+                
+                <div>
+                    <h3>Період</h3>
+                    <input type="number" min="0" max="2099" step="1" value="2000"/> -
+                    <input type="number" min="0" max="2099" step="1" value="2023"/>
+                </div>
+
+                <p> <button type="submit"> <b>Застосувати</b></button></p>
+              </form>
+        </div>
+        <div class="allbooks booklist">
+            <ul style="align-items: normal;">
+              <li>
+                  <div class="bookcon">
+                      <img src="https://m.media-amazon.com/images/I/9128Paqy4-L._AC_UF1000,1000_QL80_.jpg" alt="Фантастика" height="200px">
+                      <div class="bookcap"><div class="name"><p><b>Персі Джексон</b></p> <p>Рік Ріордан</p></div> <p class="rate"><b>4.7</b></p></div class="bookcap">
+                  </div class="bookcon">
+              </li>
+              <li>
+                  <div class="bookcon">
+                      <img src="https://vivat-book.com.ua/upload/iblock/8ce/8ce16dc939f20cc75db4659e52d27914.jpg" alt="класика" height="200px">
+                      <div class="bookcap"><div class="name"><p><b>Кобзар</b></p> <p>Тарас Шевченко</p></div> <p class="rate"><b>4.9</b></p></div class="bookcap">
+                  </div class="bookcon">
+              </li>
+              <li>
+                  <div class="bookcon">
+                      <img src="https://world-novel.fr/wp-content/uploads/2023/01/Shadow-Slave.jpg" alt="авторська" height="200px">
+                      <div class="bookcap"><div class="name"><p><b>Тіньовий раб</b></p> <p>Guiltythree</p></div> <p class="rate"><b>4.6</b></p></div class="bookcap">
+                  </div class="bookcon">
+              </li>
+              <li>
+                  <div class="bookcon">
+                      <img src="https://world-novel.fr/wp-content/uploads/2023/01/Shadow-Slave.jpg" alt="авторська" height="200px">
+                      <div class="bookcap"><div class="name"><p><b>Тіньовий раб</b></p> <p>Guiltythree</p></div> <p class="rate"><b>4.6</b></p></div class="bookcap">
+                  </div class="bookcon">
+              </li>
+              <li>
+                  <div class="bookcon">
+                      <img src="https://world-novel.fr/wp-content/uploads/2023/01/Shadow-Slave.jpg" alt="авторська" height="200px">
+                      <div class="bookcap"><div class="name"><p><b>Тіньовий раб</b></p> <p>Guiltythree</p></div> <p class="rate"><b>4.6</b></p></div class="bookcap">
+                  </div class="bookcon">
+              </li>
+              <li>
+                <div class="bookcon">
+                    <img src="https://world-novel.fr/wp-content/uploads/2023/01/Shadow-Slave.jpg" alt="авторська" height="200px">
+                    <div class="bookcap"><div class="name"><p><b>Тіньовий раб</b></p> <p>Guiltythree</p></div> <p class="rate"><b>4.6</b></p></div class="bookcap">
+                </div class="bookcon">
+            </li>
+            <li>
+                <div class="bookcon">
+                    <img src="https://world-novel.fr/wp-content/uploads/2023/01/Shadow-Slave.jpg" alt="авторська" height="200px">
+                    <div class="bookcap"><div class="name"><p><b>Тіньовий раб</b></p> <p>Guiltythree</p></div> <p class="rate"><b>4.6</b></p></div class="bookcap">
+                </div class="bookcon">
+            </li>
+            <li>
+                <div class="bookcon">
+                    <img src="https://world-novel.fr/wp-content/uploads/2023/01/Shadow-Slave.jpg" alt="авторська" height="200px">
+                    <div class="bookcap"><div class="name"><p><b>Тіньовий раб</b></p> <p>Guiltythree</p></div> <p class="rate"><b>4.6</b></p></div class="bookcap">
+                </div class="bookcon">
+            </li>
+            <li>
+                <div class="bookcon">
+                    <img src="https://world-novel.fr/wp-content/uploads/2023/01/Shadow-Slave.jpg" alt="авторська" height="200px">
+                    <div class="bookcap"><div class="name"><p><b>Тіньовий раб</b></p> <p>Guiltythree</p></div> <p class="rate"><b>4.6</b></p></div class="bookcap">
+                </div class="bookcon">
+            </li>
+            <li>
+                <div class="bookcon">
+                    <img src="https://world-novel.fr/wp-content/uploads/2023/01/Shadow-Slave.jpg" alt="авторська" height="200px">
+                    <div class="bookcap"><div class="name"><p><b>Тіньовий раб</b></p> <p>Guiltythree</p></div> <p class="rate"><b>4.6</b></p></div class="bookcap">
+                </div class="bookcon">
+            </li>
+            <li>
+                <div class="bookcon">
+                    <img src="https://world-novel.fr/wp-content/uploads/2023/01/Shadow-Slave.jpg" alt="авторська" height="200px">
+                    <div class="bookcap"><div class="name"><p><b>Тіньовий раб</b></p> <p>Guiltythree</p></div> <p class="rate"><b>4.6</b></p></div class="bookcap">
+                </div class="bookcon">
+            </li>
+            <li>
+                <div class="bookcon">
+                    <img src="https://world-novel.fr/wp-content/uploads/2023/01/Shadow-Slave.jpg" alt="авторська" height="200px">
+                    <div class="bookcap"><div class="name"><p><b>Тіньовий раб</b></p> <p>Guiltythree</p></div> <p class="rate"><b>4.6</b></p></div class="bookcap">
+                </div class="bookcon">
+            </li>
+            <li>
+                <div class="bookcon">
+                    <img src="https://world-novel.fr/wp-content/uploads/2023/01/Shadow-Slave.jpg" alt="авторська" height="200px">
+                    <div class="bookcap"><div class="name"><p><b>Тіньовий раб</b></p> <p>Guiltythree</p></div> <p class="rate"><b>4.6</b></p></div class="bookcap">
+                </div class="bookcon">
+            </li>
+            <li>
+                <div class="bookcon">
+                    <img src="https://world-novel.fr/wp-content/uploads/2023/01/Shadow-Slave.jpg" alt="авторська" height="200px">
+                    <div class="bookcap"><div class="name"><p><b>Тіньовий раб</b></p> <p>Guiltythree</p></div> <p class="rate"><b>4.6</b></p></div class="bookcap">
+                </div class="bookcon">
+            </li>
+            <li>
+                <div class="bookcon">
+                    <img src="https://world-novel.fr/wp-content/uploads/2023/01/Shadow-Slave.jpg" alt="авторська" height="200px">
+                    <div class="bookcap"><div class="name"><p><b>Тіньовий раб</b></p> <p>Guiltythree</p></div> <p class="rate"><b>4.6</b></p></div class="bookcap">
+                </div class="bookcon">
+            </li>
+            <li>
+                <div class="bookcon">
+                    <img src="https://world-novel.fr/wp-content/uploads/2023/01/Shadow-Slave.jpg" alt="авторська" height="200px">
+                    <div class="bookcap"><div class="name"><p><b>Тіньовий раб</b></p> <p>Guiltythree</p></div> <p class="rate"><b>4.6</b></p></div class="bookcap">
+                </div class="bookcon">
+            </li>
+            <li>
+                <div class="bookcon">
+                    <img src="https://world-novel.fr/wp-content/uploads/2023/01/Shadow-Slave.jpg" alt="авторська" height="200px">
+                    <div class="bookcap"><div class="name"><p><b>Тіньовий раб</b></p> <p>Guiltythree</p></div> <p class="rate"><b>4.6</b></p></div class="bookcap">
+                </div class="bookcon">
+            </li>
+            <li>
+                <div class="bookcon">
+                    <img src="https://img.freepik.com/free-photo/abstract-surface-and-textures-of-white-concrete-stone-wall_74190-8189.jpg?size=626&ext=jpg&ga=GA1.1.1518270500.1698451200&semt=sph" alt="авторська" height="200px">
+                    <div class="bookcap"><div class="name"><p><b>Тіньовий раб</b></p> <p>Guiltythree</p></div> <p class="rate"><b>4.6</b></p></div class="bookcap">
+                </div class="bookcon">
+            </li>
+            </ul>
+          </div>
+    </main>
+
+    <footer>
+        <h4>BookSpace © 2023</h4>
+        <a href="mailto:k_manoylova@knu.ua"><img src="mail.png" alt="search" height="25px"></a>
+    </footer>
+    </body>
+</html>
