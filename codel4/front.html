@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BookSpace</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Quicksand&display=swap" rel="stylesheet">
+<style>
+  @import url("style.css");
+
+  main{
+    margin: 90px 20px 20px 20px;
+}
+.booksabout{
+align-items: stretch;
+justify-content: space-between;
+display: flex;
+  }
+  #nav{
+    float: right;
+    margin: 5px;
+  }
+#covers{
+    width: 90%;
+}
+#names{
+    width: 60%;
+}
+button{
+  border-radius: 5px;
+    border: none;
+    background: #704C81;
+    color: white;
+    padding: 5px 5px;
+}
+article img{
+    display: inline-block;
+    transition: transform 0.4s;
+}
+article img:hover {
+  filter:contrast(115%) saturate(1.5);
+  transform: scale(1.1);
+}
+#more{
+  filter:sepia(35%) brightness(95%);
+}
+tr[class|="not"]{
+    color:#a89474;
+}
+aside h4 ~ a:link {
+    text-decoration: underline;
+    display: block;
+  }
+
+aside h4 ~ a:hover {
+    color: rgb(0, 179, 255);
+  }
+aside h4 ~ a:visited {
+    color: #a89474;
+  }
+
+p::selection {
+    color: white;
+    background-color: #704C81;
+  }
+  @keyframes gradient {
+  from {background-color: rgb(124, 124, 255);}
+  to {background-color: rgb(255, 209, 192);}
+}
+footer{
+  background: linear-gradient(to right, rgba(124, 124, 255, 0.5), rgba(255, 209, 192, 0.5));
+  background-color: rgb(124, 124, 255);
+  position: relative;
+  color: white;
+  border: solid #704C81;
+  text-align: center;
+  text-shadow: #704C81 1px 0 2px;
+  box-shadow: rgb(124, 124, 255, 0.5) 0px -5px;
+  z-index: 1;
+  animation-name: gradient;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse; 
+  }
+  footer h4{
+    font-family: 'Courier New', Courier, monospace;
+  }
+footer h4, footer a, footer p{
+    margin-left: 20px;
+    vertical-align:middle;
+    display: inline-block;;
+  }
+</style>
+</head>
+<body>
+    <header>
+      <h2 id="sitename"><img src="logo.png" alt="Logo" id="logo"><a href="main.html">BookSpace</a></h2>
+        <nav id="nav">
+            <ul>
+              <li><a href="#section1">Про нас</a></li>
+              <li><a href="#section2">Книги</a></li>
+              <li><a href="#section3">Жанри</a></li>
+              <li><a href="#section4">Додатково</a></li>
+            </ul>
+          </nav>
+    </header>
+    
+    <main>
+      <h2 id="section1">Про нас</h2>
+      <p><b>BookSpace</b> - це простір з будь-якою інформацією про літературу, який надає постійним читачам або новачкам в світі літератури місце для пошуку нових книг та розділення власної думки про них</p>
+      
+      <h3>Введіть масив цілих чисел через пробіл: </h3>
+      <form>
+        <input type="text" name="arrstr" id="arrstr"/><br>
+        <button onclick="ArraySort()">Відсортувати масив</button>
+    </form>
+    <script>
+      function ArraySort() {
+        arrstr = document.getElementById('arrstr').value;
+        input = arrstr.split(" ");
+        const arr = [];
+        for (var i = 0; i < input.length; i++) {
+          arr[i] = parseInt(input[i]);
+        }
+        arr.sort(function(a, b){return a - b});
+        alert("Відсортований масив: "+arr.toString());
+      }
+  </script>
+    <br>
+ 
+    <p id="par"></p>
+      <h2 id="section2">Книги</h2>
+      <article>
+        <h3>Фантастика, класика, сучасна авторська література тощо</h3>
+        <div class="booksabout" id="covers">
+        <img src="https://m.media-amazon.com/images/I/9128Paqy4-L._AC_UF1000,1000_QL80_.jpg" alt="Фантастика" height="300px">
+        <img src="https://vivat-book.com.ua/upload/iblock/8ce/8ce16dc939f20cc75db4659e52d27914.jpg" alt="класика" height="300px">
+        <img src="https://world-novel.fr/wp-content/uploads/2023/01/Shadow-Slave.jpg" alt="авторська" height="300px">
+        <img src="https://static.vecteezy.com/system/resources/previews/006/922/201/original/books-of-different-sizes-with-colorful-covers-stand-vertically-next-to-each-other-several-books-education-reading-leisure-study-color-illustration-in-flat-style-vector.jpg" 
+        alt="тощо" height="240px" id="more">
+      </div>
+      <div class="booksabout" id="names">
+        <p>"Персі Джексон"</p>
+        <p>"Кобзар" Шевченка</p>
+        <p>"Тіньовий раб"</p>
+      </div>
+        <p>Книга супроводжує людину протягом усього життя: перші книги — альбоми казок, розмальованки, перші дитячі вірші. Ми полюбили їх, а через них почали звертатися до інших книг. 
+            Книги — наші вірні порадники, вони вчать нас мислити, відкривають нам невідоме.</p>
+        <p>А тому роль книги в житті людини дуже велика: <em>своїй грамотності, освіченості ми зобов'язані книзі.</em></p>
+        <p><u>Позитивний вплив читання книг</u></p>
+        <ul>
+          <li type="i">Розумова стимуляція</a></li>
+          <li type="i">Зниження стресу</a></li>
+          <li type="i">Знання</a></li>
+          <li type="i">Розширення словникового запасу</a></li>
+          <li type="i">Поліпшення пам’яті</li>
+        </ul>
+      </article>
+
+      <h2 id="section3">Жанри</h2>
+      <table>
+        <caption>
+          Топ 5 найпопулярніших жанрів книг
+        </caption>
+        <thead>
+          <tr>
+            <th rowspan="2">Рейтинг</th>
+            <th rowspan="2">Жанр</th>
+            <th rowspan="2">Відсоток відміток читачів</th>
+            <th colspan="2">Популярні книги</th>
+          </tr>
+          <tr>
+            <th>Книга</th>
+            <th>Автор</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>1</th>
+            <td>Детектив</td>
+            <th>51%</th>
+            <td>«Вбивство на вулиці Морг»</td>
+            <td>Едгар Аллан По</td>
+          </tr>
+          <tr>
+            <th>2</th>
+            <td>Фантастика та фентезі</td>
+            <th>47%</th>
+            <td>цикл «Відьмак»</td>
+            <td>Анджей Сапковський</td>
+          </tr>
+          <tr>
+            <th>3</th>
+            <td>Класика</td>
+            <th>37%</th>
+            <td>«451° за Фаренгейтом»</td>
+            <td>Рей Бредбері</td>
+          </tr>
+          <tr>
+            <th>4</th>
+            <td>Психологія</td>
+            <th>34%</th>
+            <td>«Чудовий ранок. Як не проспати життя»</td>
+            <td>Гел Елрод</td>
+          </tr>
+          <tr>
+            <th>5</th>
+            <td>Історичні романи</td>
+            <th>31%</th>
+            <td>«Айвенго»</td>
+            <td>Вальтер Скотт</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr class="not-bold">
+            <td></td>
+            <td>Тощо</td>
+            <th>&lt26%</th>
+            <td colspan="2">Книги інших жанрів (наукова фантастика, поезія, романтика тощо)</td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <h2 id="section4">Додатково</h2>
+      <aside>
+        <h4>Цікаві статті про книги</h4>
+        <a href="https://www.matherhospital.org/wellness-at-mather/diseases-conditions/your-brain-on-books/#:~:text=We%20all%20know%20that%20reading,the%20likelihood%20of%20developing%20Alzheimer's.">Вплив читання на мозок людини</a>
+        <a href="https://wordsrated.com/impact-of-books-on-society/">Вплив книг на суспільство</a>
+      </aside>
+
+      <h2>Залиште вашу думку</h2>
+
+      <form action="">
+        <label for="fname">Ваше ім'я:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="password">email:</label>
+        <input type="password" id="password" name="password" pattern="^[a-zA-Z0-9]{8,}$"><br><br>
+        <label for="age">Ваш вік:</label>
+        <input type="number" min="1" max="120" id="age" name="age"><br><br>
+
+        <p><label for="review">Ваша думка:</label></p>
+        <textarea id="review" name="review" rows="4" cols="50"></textarea>
+        <br>
+
+        <p>Ваша освіта:</p>
+        <input type="checkbox" name="ed1" value="Інженерна">
+        <label for="ed1">Інженерна</label><br>
+        <input type="checkbox" name="ed2" value="Педагогічна">
+        <label for="ed2">Педагогічна</label><br>
+        <input type="checkbox" name="ed3" value="Медична">
+        <label for="ed3">Медична</label><br>
+        <input type="checkbox" name="ed4" value="Інша">
+        <label for="ed4">Інша</label><br>
+        <input type="checkbox" name="ed5" value="Нема">
+        <label for="ed5">Нема вищої освіти</label><br><br>
+
+        <p>Оцінка якості матеріалу:</p>
+        <input type="radio" id="like" name="rate" value="Сподобалось">
+        <label for="like">Сподобалось</label><br>
+        <input type="radio" id="ok" name="rate" value="Потребує доопрацювання">
+        <label for="ok">Потребує доопрацювання</label><br>
+        <input type="radio" id="bad" name="rate" value="Неповний">
+        <label for="bad">Неповний</label><br><br>
+
+        <p> <button type="submit"> <b>Відправити</b></button></p>
+        <input type="checkbox" id="agree" name="agree" value="Згоден">
+        <label for="agree">Я погоджуюсь на обробку інформації</label><br>
+      </form>
+    </main>
+
+    <footer>
+        <h4>Контактні дані</h4>
+        <p>Манойлова Катерина<br>
+        <a href="mailto:k_manoylova@knu.ua">k_manoylova@knu.ua</a></p>
+    </footer>
+
+    </body>
+</html>

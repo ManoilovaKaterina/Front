@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BookSpace</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Quicksand&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h2 id="sitename"><img src="logo.png" alt="Logo" id="logo"><a href="main.html">BookSpace</a></h2>
+        <nav>
+            <ul>
+              <li><a href="books.html">Книги</a></li>
+              <li><a href="authors.html">Автори</a></li>
+              <li><a href="genres.html">Жанри</a></li>
+              <li><a href="front.html">Про нас</a></li>
+            </ul>
+          </nav>
+          <form class="search" action="">
+            <input type="text" id="Search" placeholder="Пошук" name="search">
+            <button type="submit"><img src="search.svg" alt="search" height="10px"></button>
+          </form>
+    </header>
+    
+    <main>
+        <div class="info">
+        <img id = "bimg" alt="Cover" height="500px" style="object-fit: cover; border-radius: 5px; width: 350px; height: 500px;">
+        <div class="text">
+            <h1><b id="bname"></b></h1>
+            <h3 id="bauthor"></h3>
+            <h2><img src="star.png" alt="star" width="25px"><b id="brate"></b></h2>
+            <div class="genres">
+            <button onclick="" id="bgenre"></button>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        </div>
+        <div class="comments">
+            <h3>Оцінити & прокоментувати</h3>
+            <img src="star.png" alt="star" width="25px"><img src="star.png" alt="Logo" width="25px"><img src="star.png" alt="Logo" width="25px"><img src="star.png" alt="Logo" width="25px"><img src="star.png" alt="Logo" width="25px">
+            <div style="background-color: #E2D4BE;">
+            <img src="account.png" alt="star" style="width: 50px; vertical-align: top;">
+            <textarea name="textarea" rows="5" cols="150" placeholder="Залишити відгук..."></textarea>
+        </div>
+        </div>
+        <script src="showbooks.js"></script>
+        <script>BookInfo();</script>
+    </main>
+
+    <footer>
+        <h4>BookSpace © 2023</h4>
+        <a href="mailto:k_manoylova@knu.ua"><img src="mail.png" alt="search" height="25px"></a>
+    </footer>
+    </body>
+</html>
