@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BookSpace</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Quicksand&display=swap" rel="stylesheet">
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="allbooks.js"></script>
+    <script src="displayMain.js"></script>
+</head>
+<body>
+    <header class="header">
+        <h2 id="sitename"><img src="logo.png" alt="Logo" id="logo"><a href="main.html">BookSpace</a></h2>
+        <nav>
+            <ul>
+              <li><a href="books.html">Книги</a></li>
+              <li><a href="authors.html">Автори</a></li>
+              <li><a href="genres.html">Жанри</a></li>
+              <li><a href="front.html">Про нас</a></li>
+            </ul>
+          </nav>
+          <form class="search" action="books.html" method="GET">
+            <input type="text" id="forSearch" placeholder="Пошук" name="forSearch">
+            <button type="submit"><img src="search.svg" alt="search" height="10px"></button>
+          </form>
+    </header>
+    
+    <main>
+      <div class="foryou booklist">
+        <div class="listhead">
+        <h2>Для Вас</h2>
+        <a href="books.html"><h3>Ще</h3><img src="arrow.png" alt="arrow" style="width: 20px; height: 20px;"></a>
+        </div>
+        <ul id="ForYou">
+        </ul>
+    </div>
+
+    <div class="booklist">
+        <div class="listhead">
+        <h3>Популярні</h3>
+        <a href="books.html"><img src="arrow.png" alt="arrow"></a>
+        </div>
+        <ul id="Popular">
+        </ul>
+      </div>
+
+      <div class="booklist">
+        <div class="listhead">
+        <h3>Новинки</h3>
+        <a href="books.html"><img src="arrow.png" alt="arrow"></a>
+        </div>
+        <ul id="New">
+        </ul>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+        <h4>BookSpace © 2023</h4>
+        <a href="mailto:k_manoylova@knu.ua"><img src="mail.png" alt="search" height="25px"></a>
+    </footer>
+    </body>
+</html>
